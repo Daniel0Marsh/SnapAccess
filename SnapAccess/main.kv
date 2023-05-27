@@ -1,0 +1,193 @@
+<MainWindow>:
+    name: "login"
+    password: password
+
+    FloatLayout:
+
+
+        Image:
+            source:'image/background.png'
+            allow_stretch: True
+            keep_ratio: False
+
+        Image:
+            source:'image/login.png'
+            keep_ratio: False
+            pos_hint: {"center_x":.5}
+            pos: 0, 135
+            size_hint_y: None
+            height:290
+            size_hint_x: None
+            width: 300
+
+        Image:
+            source:'image/logo.png'
+            keep_ratio: False
+            pos_hint: {"center_x":.5}
+            pos: 0, 310
+            size_hint_y: None
+            height:100
+            size_hint_x: None
+            width: 100
+
+
+        Label:
+            text:"Developed by Daniel Marsh                                            Desktop version 1.0"
+            background_color: (.1, .1, .1, .1)
+            font_size: 10
+            pos_hint: {"center_x":.5}
+            pos: 0, 10
+            size_hint: 0.35, 0.15
+
+        Label:
+            text: "Login to SnapAccess"
+            font_size: 25
+            pos_hint: {"center_x": .5}
+            pos: 0, 410
+            size_hint: 0.35, 0.15
+            font_name: "Arial"  # Specify the font name
+            bold: True  # Make the text bold
+            color: 1, 1, 1, 1  # Set the text color (white in this case)
+
+        TextInput:
+            id: password
+            text_color: (1, 1, 1, 1)
+            background_color: (.238, .238, .238, .238)
+            background_normal: ''
+            font_size: 24
+            multiline: False
+            password: True
+            pos_hint: {"center_x":.5}
+            pos: 0, 250
+            size_hint_y: None
+            height:30
+            size_hint_x: None
+            width: 239
+
+
+        Button:
+            background_color: (.398, .398, .398, .298)
+            font_size: 20
+            pos_hint: {"center_x":.5, }
+            pos: 20, 185
+            size_hint_y: None
+            height:34
+            size_hint_x: None
+            width: 239
+            text: "Login"
+            on_release:
+                root.login()
+
+        Button:
+            background_color: (0, 0, 0, 0)
+            pos_hint:{"x":.535}
+            pos: 0, 280
+            size_hint_y: None
+            size_hint_x: None
+            height: 20
+            width: 80
+            text: ""
+            on_release:
+                root.forgot_pas()
+
+
+<SecondWindow>:
+    name: "main"
+    FloatLayout:
+
+    Image:
+        source:'image/background.png'
+        allow_stretch: True
+        keep_ratio: False
+
+    Image:
+        source:'image/main.png'
+        allow_stretch: True
+        keep_ratio: False
+        pos_hint: {"center_x":.5}
+        pos: 0, 70
+        size_hint_y: None
+        height:350
+        size_hint_x: None
+        width: 510
+
+    ActionBar:
+        background_color: (0, 0, 0, 0)
+        pos_hint:{"left":1,"top":1}
+        ActionView:
+            ActionPrevious:
+                app_icon: ''
+                title: ""
+                with_previous: False
+            ActionOverflow:
+                ActionButton:
+                    text: "Settings"
+                    on_press: app.open_settings()
+
+    Label:
+        text:"Select A Option: "
+        font_size: 30
+        pos_hint: {"center_x":0.5}
+        pos:0, 450
+        size_hint: 0.35, 0.15
+
+    Label:
+        text:"Developed by Daniel Marsh                                            Desktop version 1.0"
+        background_color: (.1, .1, .1, .1)
+        font_size: 10
+        pos_hint: {"center_x":.5}
+        pos: 0, 10
+        size_hint: 0.35, 0.15
+
+    Button:
+        id: btn_label_1
+        background_color: (1, 0, 0, 1)
+        pos_hint: {"center_x":.5}
+        pos: 0, 317
+        size_hint_y: None
+        height:55
+        size_hint_x: None
+        width: 465
+        font_size: 20
+        text: root.program_1_name
+        on_release:
+            root.open_program_1()
+
+    Button:
+        background_color: (1, 0, 0, 1)
+        pos_hint: {"center_x":.5}
+        pos: 0, 240
+        size_hint_y: None
+        height:55
+        size_hint_x: None
+        width: 465
+        font_size: 20
+        text: root.program_2_name
+        on_release:
+            root.open_program_2()
+
+    Button:
+        background_color: (1, 0, 0, 1)
+        pos_hint: {"center_x":.5}
+        pos: 0, 163
+        size_hint_y: None
+        height:55
+        size_hint_x: None
+        width: 465
+        font_size: 20
+        text: root.program_3_name
+        on_release:
+            root.open_program_3()
+
+    Button:
+        background_color: (1, 0, 0, 1)
+        pos_hint: {"center_x":.5}
+        pos: 0, 87
+        size_hint_y: None
+        height:55
+        size_hint_x: None
+        width: 465
+        font_size: 20
+        text: root.program_4_name
+        on_release:
+            root.open_program_4()
