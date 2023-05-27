@@ -60,7 +60,7 @@ These steps are for those who downloaded the file named 'SnapAccess' for debuggi
 - a web based page will open
 - use the browse button at the top of the page to select the main.py file location
 - sellect the options 'One Directory' and 'Window based(Hide the console)
-- go to 'ICON' and use the browse button to sellect the application icon locatted at C:/your/location/epic-entree/image/logo_dark.ico
+- go to 'ICON' and use the browse button to sellect the application icon locatted at C:/your/location/SnapAccess/image/logo.ico
 - go to 'Add files' and add all the files in the SnapAccess directory excluding the main.py file
 - go to 'Add files' and add the image folder located in the SnapAccess directory
 - go to setting 'Output directory' and sellect your desired location
