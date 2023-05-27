@@ -21,7 +21,7 @@
             width: 300
 
         Image:
-            source:'image/logo.png'
+            source:'image/logo_transparent.png'
             keep_ratio: False
             pos_hint: {"center_x":.5}
             pos: 0, 310
@@ -149,11 +149,12 @@
         size_hint_x: None
         width: 465
         font_size: 20
-        text: root.program_1_name
+        text: ""
         on_release:
             root.open_program_1()
 
     Button:
+        id: btn_label_2
         background_color: (1, 0, 0, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 240
@@ -162,11 +163,12 @@
         size_hint_x: None
         width: 465
         font_size: 20
-        text: root.program_2_name
+        text: ""
         on_release:
             root.open_program_2()
 
     Button:
+        id: btn_label_3
         background_color: (1, 0, 0, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 163
@@ -175,11 +177,12 @@
         size_hint_x: None
         width: 465
         font_size: 20
-        text: root.program_3_name
+        text: ""
         on_release:
             root.open_program_3()
 
     Button:
+        id: btn_label_4
         background_color: (1, 0, 0, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 87
@@ -188,6 +191,6 @@
         size_hint_x: None
         width: 465
         font_size: 20
-        text: root.program_4_name
+        text: ""
         on_release:
             root.open_program_4()
