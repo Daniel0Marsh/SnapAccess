@@ -7,14 +7,14 @@ from kivy.uix.screenmanager import ScreenManager, Screen, NoTransition
 from kivy.uix.settings import SettingsWithSidebar
 from kivy.core.window import Window
 from kivy.storage.jsonstore import JsonStore
+from kivy.properties import StringProperty
 from kivy.config import Config
+from kivy.clock import Clock
 from os.path import join
 import time
 import sys
 import subprocess
-from kivy.properties import StringProperty
 import os
-from kivy.clock import Clock
 import webbrowser
 
 # json files store passwords, switch info and added directory/paths
@@ -59,10 +59,11 @@ class MainWindow(Screen):
     # forgot password popup
     def forgot_pas(self):
         pop = Popup(title='Forgotten Password',
-                    content=Label(text="If you can't remember \nyour password\n"
-                                       "\nuninstall and reinstall \nthe app "),
-                    size_hint=(None, None), size=(250, 200),
-                    separator_color=(1, 0, 0, 1))
+                    content=Label(text="If you can't remember your password"
+                                       "\nuninstall and reinstall the app "),
+                    size_hint=(None, None), size=(500, 400),
+                    separator_color=(0.35, 0.56, 0.84, 1),
+                    background_color=(0.35, 0.56, 0.84, 1)) # Nice blue color
         pop.open()
 
 
@@ -197,17 +198,18 @@ class WindowManager(ScreenManager):
 def invalid_password():
     pop = Popup(title='invalid Password',
                 content=Label(text="Incorrect Password"),
-                size_hint=(None, None), size=(250, 200),
+                size_hint=(None, None), size=(300, 200),
                 separator_color=(1, 0, 0, 1),
-                background_color=(1, 1, 1, 1))
+                background_color=(0.35, 0.56, 0.84, 1)) # Nice blue color
     pop.open()
 
 # opening programs popup
 def open_program():
     pop = Popup(title='Opening Programs',
                 content=Label(text="Your programs are now open"),
-                size_hint=(None, None), size=(250, 200),
-                separator_color=(1, 0, 0, 1))
+                size_hint=(None, None), size=(400, 300),
+                separator_color=(0.35, 0.56, 0.84, 1),
+                background_color=(0.35, 0.56, 0.84, 1)) # Nice blue color
     pop.open()
 
 
