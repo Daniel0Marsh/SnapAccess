@@ -214,7 +214,7 @@ def invalid_password():
     pop.open()
 
 # opening programs popup
-def open_program(error_messages=None, pop_size=(300, 200)):
+def open_program(error_messages=None, pop_size=(400, 300)):
     if error_messages:
         message = '\n'.join(error_messages)
     else:

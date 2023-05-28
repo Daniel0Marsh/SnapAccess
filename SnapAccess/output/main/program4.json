@@ -1,0 +1,72 @@
+[
+     {"type": "string",
+     "title": "Program name",
+     "desc": "This will update on the next restarted",
+     "section": "program4",
+     "key": "program_name"},
+     {
+     "type": "title",
+     "title": "Add Directory or Web address "},
+
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "1"},
+    {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "2"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "3"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "4"},
+
+    {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "5"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "6"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "7"},
+    {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "8"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "9"},
+     {
+     "type": "string",
+     "title": "Path",
+     "desc": "Add Directory or Web address",
+     "section": "program4",
+     "key": "10"}
+   ]
