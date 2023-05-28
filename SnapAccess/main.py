@@ -169,26 +169,36 @@ class SecondWindow(Screen):
     def open_programs(self, program_number):
         """Use a for-loop to open programs in 'program_number' list object passed to method"""
 
+        error_messages = []
+
         for resource in program_number:
             if resource != '':
                 if resource.startswith('http://') or resource.startswith('https://'):
                     # Open URL in default web browser
                     webbrowser.open(resource)
-                elif resource.endswith('.exe'):
-                    # Open app by file path
-                    os.startfile(resource)
                 else:
-                    # Open file path or directory path
-                    os.startfile(resource)
+                    try:
+                        # Open file path, directory path, or applications
+                        os.startfile(resource)
+                    except FileNotFoundError:
+                        error_messages.append(f"\n- {resource}")
 
 
         try:
             if store.get('app_on')['app_on_value'] == 1:
                 sys.exit()
             else:
-                open_program()
+                if error_messages:
+                    error_messages = ["Oops... Path not found:"] + error_messages
+                    open_program(error_messages,pop_size=(500, 650))
+                else:
+                    open_program()
         except KeyError:
-            open_program()
+            if error_messages:
+                error_messages = ["Oops... this path wasn't found:"] + error_messages
+                open_program(error_messages,pop_size=(500, 650))
+            else:
+                open_program()
 
 
 class WindowManager(ScreenManager):
@@ -204,12 +214,18 @@ def invalid_password():
     pop.open()
 
 # opening programs popup
-def open_program():
+def open_program(error_messages=None, pop_size=(300, 200)):
+    if error_messages:
+        message = '\n'.join(error_messages)
+    else:
+        message = "Your programs are now opening..."
+
     pop = Popup(title='Opening Programs',
-                content=Label(text="Your programs are now open"),
-                size_hint=(None, None), size=(400, 300),
+                content=Label(text=message),
+                size_hint=(None, None),
+                size=pop_size,
                 separator_color=(0.35, 0.56, 0.84, 1),
-                background_color=(0.35, 0.56, 0.84, 1)) # Nice blue color
+                background_color=(0.35, 0.56, 0.84, 1))  # Nice blue color
     pop.open()
 
 
