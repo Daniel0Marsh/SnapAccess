@@ -1,0 +1,13 @@
+[{"type": "title",
+     "title": "ADDING APPLICATIONS \nuse the application name   \nExample: Firefox"},
+
+  {"type": "title",
+     "title": "ADDING WEB ADDRESSES \nuse the full web address    \nExample: https://github.com "},
+
+  {"type": "title",
+     "title": "ADDING files \nuse the file path and change \\ to \\\\    \nExample: C:\\Users\\user_name   change to   C:\\\\users\\\\user_name "},
+
+  {"type": "title",
+     "title": "ADDING DIRECTORY \nuse the directory path and change \\ to \\\\\nExample: C:\\Users\\user_name   change to   C:\\\\Users\\\\user_name "}
+
+]
