@@ -255,7 +255,9 @@ class MyMainApp(App):
 
     def build(self):
         self.title = 'SnapAccess'
-        self.icon = r'C:\Users\Garry\dev\codeblock_projects/SnapAccess\SnapAccess\image\logo_transparent.png'
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        icon_path = os.path.join(current_dir, 'image', 'logo_Black.png')
+        self.icon = icon_path
         self.settings_cls = SettingsWithSidebar
         self.use_kivy_settings = False
         Config.read('mymain.ini')

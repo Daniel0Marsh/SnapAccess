@@ -2,7 +2,7 @@
      {
      "type": "string",
      "title": "Program name",
-     "desc": "The will update on the next restarted",
+     "desc": "Enter your desired program name or identifier",
      "section": "program1",
      "key": "program_name"},
     {

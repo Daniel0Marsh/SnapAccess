@@ -1,13 +1,13 @@
 [{"type": "title",
-     "title": "ADDING APPLICATIONS \nuse the application name   \nExample: Firefox"},
+     "title": "ADDING APPLICATIONS \n\n\nTo add an application, provide the application name or the path to the .exe file.\n\nExample: Firefox or C:\\Users\\user_name\\Firefox.exe"},
 
   {"type": "title",
-     "title": "ADDING WEB ADDRESSES \nuse the full web address    \nExample: https://github.com "},
+     "title": "ADDING WEB ADDRESSES \n\n\nTo add a web address, provide the full web address.\n\nExample: https://github.com"},
 
   {"type": "title",
-     "title": "ADDING files \nuse the file path and change \\ to \\\\    \nExample: C:\\Users\\user_name   change to   C:\\\\users\\\\user_name "},
+     "title": "ADDING FILES \n\n\nTo add a file, provide the full file path.\n\nExample: C:\\Users\\user_name\\your_file"},
 
   {"type": "title",
-     "title": "ADDING DIRECTORY \nuse the directory path and change \\ to \\\\\nExample: C:\\Users\\user_name   change to   C:\\\\Users\\\\user_name "}
+     "title": "ADDING DIRECTORIES \n\n\nTo add a directory, provide the full directory path.\n\nExample: C:\\Users\\user_name\\your_directory"}
 
 ]
