@@ -3,7 +3,7 @@
     {
       "type": "string",
       "title": "Program name",
-      "desc": "This will update on the next restarted",
+      "desc": "Enter your desired program name or identifier",
       "section": "program2",
       "key": "program_name"},
      {
