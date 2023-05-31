@@ -32,7 +32,7 @@
 
 
         Label:
-            text:"Developed by Daniel Marsh                                            Desktop version 1.0"
+            text:"Developed by CodeBlock.io                                            Desktop version 1.0"
             background_color: (.1, .1, .1, .1)
             font_size: 20
             pos_hint: {"center_x":.5}
@@ -52,9 +52,8 @@
         TextInput:
             id: password
             text_color: (1, 1, 1, 1)
-            background_color: (.238, .238, .238, .238)
+            background_color: (0.02, 0.227, 0.369, 1)
             background_normal: ''
-            font_size: 24
             multiline: False
             password: True
             pos_hint: {"center_x":.5}
@@ -62,18 +61,18 @@
             size_hint_y: None
             height:40
             size_hint_x: None
-            width: 300
+            width: 330
 
 
         Button:
-            background_color: (.398, .398, .398, .298)
+            background_color: (0.043, 0.478, 0.769, 1)
             font_size: 20
             pos_hint: {"center_x":.5, }
             pos: 20, 260
             size_hint_y: None
             height:40
             size_hint_x: None
-            width: 300
+            width: 320
             text: "Login"
             on_release:
                 root.login()
@@ -112,7 +111,7 @@
         width: 700
 
     ActionBar:
-        background_color: (0, 0, 0, 0)
+        background_color: (.0, .0, .0, .0)
         pos_hint:{"left":1,"top":1}
         ActionView:
             ActionPrevious:
@@ -132,7 +131,7 @@
         size_hint: 0.35, 0.15
 
     Label:
-        text:"Developed by Daniel Marsh                                                  Desktop version 1.0"
+        text:"Developed by CodeBlock.io                                                  Desktop version 1.0"
         background_color: (.1, .1, .1, .1)
         font_size: 20
         pos_hint: {"center_x":.5}
@@ -140,12 +139,12 @@
         size_hint: 0.35, 0.15
 
     Button:
-        id: btn_label_1
-        background_color: (1, 0, 0, 1)
+        id: btn_1
+        background_color: (0.043, 0.478, 0.769, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 500
         size_hint_y: None
-        height:80
+        height: 80
         size_hint_x: None
         width: 635
         font_size: 30
@@ -154,8 +153,8 @@
             root.open_program_1()
 
     Button:
-        id: btn_label_2
-        background_color: (1, 0, 0, 1)
+        id: btn_2
+        background_color: (0.043, 0.478, 0.769, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 390
         size_hint_y: None
@@ -168,8 +167,8 @@
             root.open_program_2()
 
     Button:
-        id: btn_label_3
-        background_color: (1, 0, 0, 1)
+        id: btn_3
+        background_color: (0.043, 0.478, 0.769, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 280
         size_hint_y: None
@@ -182,8 +181,8 @@
             root.open_program_3()
 
     Button:
-        id: btn_label_4
-        background_color: (1, 0, 0, 1)
+        id: btn_4
+        background_color: (0.043, 0.478, 0.769, 1)
         pos_hint: {"center_x":.5}
         pos: 0, 170
         size_hint_y: None
