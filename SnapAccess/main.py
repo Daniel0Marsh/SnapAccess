@@ -22,6 +22,8 @@ data_dir = App().user_data_dir
 store = JsonStore(join(data_dir,'SnapAccess-password.json'))
 store1 = JsonStore(join(data_dir,'SnapAccess-info.json'))
 
+# Set the window size
+#Window.size = (550, 570)
 
 
 class MainWindow(Screen):
@@ -67,7 +69,6 @@ class MainWindow(Screen):
         pop.open()
 
 
-
 class SecondWindow(Screen):
     program_names = {
         'name1': 'program 1',
@@ -80,6 +81,7 @@ class SecondWindow(Screen):
         super().__init__(**kwargs)
         Clock.schedule_interval(self.update_labels, 0.1)
 
+
     def update_labels(self, *args):
         store = JsonStore('data.json')
 
@@ -88,11 +90,10 @@ class SecondWindow(Screen):
             for key, default_value in self.program_names.items()
         }
 
-        self.ids.btn_label_1.text = program_name_values['name1']
-        self.ids.btn_label_2.text = program_name_values['name2']
-        self.ids.btn_label_3.text = program_name_values['name3']
-        self.ids.btn_label_4.text = program_name_values['name4']
-
+        self.ids.btn_1.text = program_name_values['name1']
+        self.ids.btn_2.text = program_name_values['name2']
+        self.ids.btn_3.text = program_name_values['name3']
+        self.ids.btn_4.text = program_name_values['name4']
 
 
     def open_program_1(self):
@@ -207,7 +208,7 @@ class WindowManager(ScreenManager):
 # incorrect password pop up function
 def invalid_password():
     pop = Popup(title='invalid Password',
-                content=Label(text="Incorrect Password"),
+                content=Label(text="        Opps...\nPlease try again!"),
                 size_hint=(None, None), size=(300, 200),
                 separator_color=(1, 0, 0, 1),
                 background_color=(0.35, 0.56, 0.84, 1)) # Nice blue color
@@ -260,9 +261,10 @@ class MyMainApp(App):
         self.icon = icon_path
         self.settings_cls = SettingsWithSidebar
         self.use_kivy_settings = False
+
         Config.read('mymain.ini')
-        Config.set('input','mouse','mouse,disable_multitouch')
-        Config.set('kivy','window_icon','icon')
+        Config.set('input', 'mouse', 'mouse,disable_multitouch')
+        Config.set('kivy', 'window_icon', 'icon')
         return sm
 
 
