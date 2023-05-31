@@ -1,6 +1,6 @@
 # SnapAccess
 
-![alt text](https://github.com/Garry0Host/SnapAccess/blob/main/SnapAccess/image/logo_dark.png)
+![alt text](https://github.com/Garry0Host/SnapAccess/SnapAccess/image/logo_dark.png)
 
 ### Table of contents
 * [Introduction](#introduction)
