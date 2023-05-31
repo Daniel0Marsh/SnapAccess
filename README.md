@@ -1,6 +1,6 @@
 # SnapAccess
 
-![alt text](https://github.com/Garry0Host/Entree/blob/main/epic-entree/image/logo_dark.png)
+![alt text](https://github.com/Daniel0Marsh/SnapAccess/blob/master/SnapAccess/image/logo_black.png)
 
 ### Table of contents
 * [Introduction](#introduction)
